@@ -1,0 +1,95 @@
+.footer-container {
+    background-color: #e09850;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .footer-logo-section {
+    flex: 1 1 30%;
+  }
+  
+  .footer-logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .footer-icon:hover {
+    color: #000;
+  }
+  
+  .footer-search {
+    margin-top: 10px;
+  }
+  
+  .footer-search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex: 2 1 60%;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+  }
+  
+  .footer-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .footer-column li:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #666;
+  }
+  

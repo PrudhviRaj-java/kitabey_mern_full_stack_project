@@ -1,0 +1,201 @@
+/* General styles (desktop default) */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden on desktop by default */
+  }
+  
+  .menu-items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .menu-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .menu-item {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .submenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .submenu li {
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .submenu li:hover {
+    color: #007bff;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .search-icon {
+    margin-left: 5px;
+  }
+  
+  .icon-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .sliding-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .close-icon {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-list li {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+ /* Responsive styles for tablets and mobiles */
+@media (max-width: 768px) {
+    .header-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .menu-icon {
+      display: block; /* Show menu button */
+    }
+  
+    .logo {
+      order: 3; /* Move logo to the right */
+      margin-left: auto; /* Align logo to the far right */
+    }
+  
+    .icon-group {
+      display: flex;
+      gap: 10px;
+      order: 2; /* Place icons in the middle */
+      margin-right: 10px; /* Add margin to keep space from the menu icon */
+    }
+  
+    .menu-items,
+    .header-right {
+      display: none; /* Hide larger screen menu items */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+    }
+  
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  
+    .menu-icon {
+      font-size: 28px; /* Larger size for better visibility */
+      order: 1; /* Place menu button on the left */
+    }
+  
+    .icon-group {
+      margin-left: auto; /* Push icons to the right */
+      display: flex;
+      gap: 10px;
+      order: 3; /* Move icons to the far right */
+    }
+  
+    .logo {
+      order: 2; /* Ensure logo stays on the right */
+      margin-left: 10px; /* Space between logo and icons */
+    }
+  
+    .sliding-menu {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  

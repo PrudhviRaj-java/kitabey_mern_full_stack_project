@@ -1,0 +1,29 @@
+.main-container {
+    display: flex;
+    flex-direction: row; /* Aligns images in a row */
+    justify-content: space-between; /* Adds space between the image containers */
+    align-items: center; /* Centers the images vertically */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .image-container {
+    flex: 1; /* Makes all image containers the same size */
+    margin: 10px;
+    overflow: hidden; /* Ensures images don't overflow the container */
+    border-radius: 10px; /* Adds rounded corners to the image containers */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images fit nicely without distortion */
+    transition: transform 0.3s ease; /* Adds a zoom effect on hover */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1); /* Zooms the image slightly on hover */
+  }
+  
